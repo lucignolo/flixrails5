@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= render 'layouts/rails_default.html.erb' %>
+  </head>
+  <body>
+    <%= render 'layouts/header.html.erb' %>
+    <div class="container">
+      <%= yield %>
+      <%= render 'layouts/footer.html.erb' %>
+    </div>
+    
+    <% if @ugo_lay_1 %>
+    <div style="padding:10px; 
+      width:300px; height:auto; border:10px solid green;">
+      Testo, immagini e quant'altro si voglia inserire come testo all'interno di questo box.
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 provacella">.col-md-6</div>
+        <div class="col-md-6 provacella">.col-md-6</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 provacella">.col-md-4</div>
+        <div class="col-md-4 provacella">.col-md-4</div>
+        <div class="col-md-4 provacella">.col-md-4</div>
+      </div>
+      <h3> fine della prova </h3>
+    </div>
+    <% end %>
+
+  </body>
+</html>

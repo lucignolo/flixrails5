@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "sample app", '#', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   '#' %></li>
+            <li><%= link_to "Help",   '#' %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+    
+    <% if @ugo_lay_1 %>
+    <div style="padding:10px; 
+      width:300px; height:auto; border:10px solid green;">
+      Testo, immagini e quant'altro si voglia inserire come testo all'interno di questo box.
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 provacella">.col-md-6</div>
+        <div class="col-md-6 provacella">.col-md-6</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 provacella">.col-md-4</div>
+        <div class="col-md-4 provacella">.col-md-4</div>
+        <div class="col-md-4 provacella">.col-md-4</div>
+      </div>
+      <h3> fine della prova </h3>
+    </div>
+    <% end %>
+
+  </body>
+</html>
