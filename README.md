@@ -1,6 +1,7 @@
 # Ruby on Rails Tutorial sample application
 
-Nuovo controllo di gestione il 29/09/2017 
+Nuovo controllo di gestione il 29/09/2017, con successiva variazione di questo file e commit, in data 01/10/2017 
+
 This is the sample application for
 [*Ruby on Rails Tutorial:
 Learn Web Development with Rails*](http://www.railstutorial.org/)
